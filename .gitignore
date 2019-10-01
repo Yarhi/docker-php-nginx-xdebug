@@ -1,1 +1,10 @@
-./public/.svn
+public/.svn/
+public/application/
+public/assets/
+public/composer.json
+public/contributing.md
+public/index.php
+public/license.txt
+public/phpunit.phar
+public/readme.rst
+public/system/
