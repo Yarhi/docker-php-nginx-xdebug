@@ -1,7 +1,13 @@
 FROM php:7.3-fpm
 
+# Install Mysqli driver and php7.3-mysql
+# RUN apt-get update && apt-get install -y php7.3-mysql
+# RUN docker-php-ext-install mysql mysqli sysvsem
+
+RUN docker-php-ext-install mysqli
+
 # Install and enable xDebug
-RUN pecl install xdebug
+RUN pecl install xdebug mysql
 RUN docker-php-ext-enable xdebug
 
 # Prevent error in nginx error.log

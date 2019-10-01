@@ -12,5 +12,4 @@ docker-compose build
 #     echo $vhost >> /etc/hosts
 # fi
 
-
 docker-compose up
