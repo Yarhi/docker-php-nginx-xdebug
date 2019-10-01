@@ -4,13 +4,13 @@
 
 docker-compose build
 
-vhost="127.0.0.1 php-docker.local"
-rs=$(grep -q "$vhost" /etc/hosts; echo $?)
+# vhost="127.0.0.1 php-docker.local"
+# rs=$(grep -q "$vhost" /etc/hosts; echo $?)
 
-if [ $rs -eq 1 ] 
-then
-    echo $vhost >> /etc/hosts
-fi
+# if [ $rs -eq 1 ] 
+# then
+#     echo $vhost >> /etc/hosts
+# fi
 
 
 docker-compose up
